@@ -1,0 +1,27 @@
+{
+  "name": "php-site-core",
+  "title": "PHP网站系统核心基类和接口库",
+  "description": "PHP网站系统核心基类和接口库",
+  "version": "0.0.4",
+  "homepage": "https://github.com/peigong/php-site-core",
+  "author": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peigong/php-site-core.git"
+  },
+  "bugs": "https://github.com/peigong/php-site-core/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/peigong/php-site-core/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+  },
+  "keywords": [],
+  "devDependencies": {
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-copy": "~0.4.0",
+    "grunt": "~0.4.1"
+  }
+}
