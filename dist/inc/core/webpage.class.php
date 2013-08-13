@@ -69,7 +69,7 @@ abstract class WebPage{
         if($tpl){
             /*- 定义系统名称和页面标题 -*/
             $sys_name = '';
-            if (defined(SYSTEMNAME)) {
+            if (defined('SYSTEMNAME')) {
                 $sys_name = SYSTEMNAME;
             }
             $this->assign('SYSTEMNAME', $sys_name);
