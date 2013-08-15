@@ -152,12 +152,14 @@ abstract class DObject extends AbstractObject{
             }, $db_fields);
         $sql = $this->assembleRetrieveSql($db, $settings);
         $rows = $this->dao->getData($sql, $db);
-        foreach($rows as $idx=>$row){
-            $entity = array();
-            for($i = 0; $i < count($entity_fields); $i++){
-                $entity[$entity_fields[$i]] = $row[$db_fields[$i]];
+        if ($rows && count($rows) > 0) {
+            foreach($rows as $idx=>$row){
+                $entity = array();
+                for($i = 0; $i < count($entity_fields); $i++){
+                    $entity[$entity_fields[$i]] = $row[$db_fields[$i]];
+                }
+                array_push($result, $entity);
             }
-            array_push($result, $entity);
         }
         return $result;
     }
@@ -179,6 +181,7 @@ abstract class DObject extends AbstractObject{
      * )
      */
     protected function retrieveLine($db, $settings){
+        $entity = array();
         $entity_fields = array_keys($settings['fields']);
         $db_fields = array_values($settings['fields']);
         $db_fields = array_map(function($val){
@@ -191,9 +194,10 @@ abstract class DObject extends AbstractObject{
             }, $db_fields);
         $sql = $this->assembleRetrieveSql($db, $settings);
         $row = $this->dao->getLine($sql, $db);
-        $entity = array();
-        for($i = 0; $i < count($entity_fields); $i++){
-            $entity[$entity_fields[$i]] = $row[$db_fields[$i]];
+        if ($rows && count($rows) > 0) {
+            for($i = 0; $i < count($entity_fields); $i++){
+                $entity[$entity_fields[$i]] = $row[$db_fields[$i]];
+            }
         }
         return $entity;
     }
