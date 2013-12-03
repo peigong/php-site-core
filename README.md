@@ -1,7 +1,5 @@
 # PHP网站系统核心基类和接口库 #
 
-## 项目依赖 ##
-
 ## 使用说明 ##
  * 需要使用定义WEB系统根目录的静态常量ROOT。
  * 如果使用页面基类，则需要定义页面基本使用到的Smarty常量，如下：
@@ -9,9 +7,11 @@
  	* SMARTY_TEMPLATES：Smarty页面模板的默认路径。
  	* SMARTY_CACHE：Smarty缓存的绝对路径，要求写权限。参见Smarty的基本安装（[中文](http://www.php100.com/manual/smarty/installing.smarty.basic.html)、[英文](http://www.smarty.net/quick_install)）。
 
-## 分发目录的说明 ##
-
 ## 版本更新记录 ##
+
+### 0.1.2 ###
+ * 遵循语义化版本规范[SemVer](http://semver.org)([中文](http://clientlab.github.io/studio/2013/11/16/semantic-versioning-2.0.0/))命名版本号。
+ * 发布为Bower模块。
 
 ### 0.1.1 ###
  * 页面基类中增加常用常量的赋值。

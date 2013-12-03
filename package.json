@@ -3,7 +3,7 @@
   "title": "PHP网站系统核心基类和接口库",
   "description": "PHP网站系统核心基类和接口库",
   "version": "0.0.4",
-  "homepage": "https://github.com/peigong/php-site-core",
+  "homepage": "https://peigong.github.com/php-site-core",
   "author": {},
   "repository": {
     "type": "git",

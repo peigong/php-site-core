@@ -1,0 +1,33 @@
+{
+  "name": "php-site-core",
+  "version": "0.1.2",
+  "homepage": "https://peigong.github.com/php-site-core",
+  "authors": [
+    "周培公 <peigong@foxmail.com>"
+  ],
+  "description": "PHP网站系统核心基类和接口库",
+  "main": [
+    "dist/inc/core/abstractobject.class.php",
+    "dist/inc/core/b.object.class.php",
+    "dist/inc/core/d.object.class.php",
+    "dist/inc/core/d.route.inc.php",
+    "dist/inc/core/httpcontext.class.php",
+    "dist/inc/core/webpage.inc.php",
+    "dist/inc/core/webpage.class.php",
+    "dist/inc/core/security/principal/principal.inc.php",
+    "dist/inc/core/security/principal/simpleidentity.class.php",
+    "dist/inc/core/security/principal/simpleprincipal.class.php"
+  ],
+  "keywords": [
+    "php",
+    "site"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
