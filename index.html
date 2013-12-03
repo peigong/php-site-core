@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>PHP类库 by peigong</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>PHP类库</h1>
+        <h2>PHP网站系统核心基类和接口库</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/peigong/php-site-core/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/peigong/php-site-core/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/peigong/php-site-core" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a name="php%E7%BD%91%E7%AB%99%E7%B3%BB%E7%BB%9F%E6%A0%B8%E5%BF%83%E5%9F%BA%E7%B1%BB%E5%92%8C%E6%8E%A5%E5%8F%A3%E5%BA%93" class="anchor" href="#php%E7%BD%91%E7%AB%99%E7%B3%BB%E7%BB%9F%E6%A0%B8%E5%BF%83%E5%9F%BA%E7%B1%BB%E5%92%8C%E6%8E%A5%E5%8F%A3%E5%BA%93"><span class="octicon octicon-link"></span></a>PHP网站系统核心基类和接口库</h1>
+
+<h2>
+<a name="%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E" class="anchor" href="#%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E"><span class="octicon octicon-link"></span></a>使用说明</h2>
+
+<ul>
+<li>需要使用定义WEB系统根目录的静态常量ROOT。</li>
+<li>如果使用页面基类，则需要定义页面基本使用到的Smarty常量，如下：
+
+<ul>
+<li>SMARTY_PATH：Smarty库的绝对路径。</li>
+<li>SMARTY_TEMPLATES：Smarty页面模板的默认路径。</li>
+<li>SMARTY_CACHE：Smarty缓存的绝对路径，要求写权限。参见Smarty的基本安装（<a href="http://www.php100.com/manual/smarty/installing.smarty.basic.html">中文</a>、<a href="http://www.smarty.net/quick_install">英文</a>）。</li>
+</ul>
+</li>
+</ul><h2>
+<a name="%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95" class="anchor" href="#%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95"><span class="octicon octicon-link"></span></a>版本更新记录</h2>
+
+<h3>
+<a name="012" class="anchor" href="#012"><span class="octicon octicon-link"></span></a>0.1.2</h3>
+
+<ul>
+<li>遵循语义化版本规范<a href="http://semver.org">SemVer</a>(<a href="http://clientlab.github.io/studio/2013/11/16/semantic-versioning-2.0.0/">中文</a>)命名版本号。</li>
+<li>发布为Bower模块。</li>
+</ul><h3>
+<a name="011" class="anchor" href="#011"><span class="octicon octicon-link"></span></a>0.1.1</h3>
+
+<ul>
+<li>页面基类中增加常用常量的赋值。</li>
+</ul><h3>
+<a name="010" class="anchor" href="#010"><span class="octicon octicon-link"></span></a>0.1.0</h3>
+
+<ul>
+<li>重构了数据层基类中数据库工具性方法。</li>
+</ul><h3>
+<a name="004" class="anchor" href="#004"><span class="octicon octicon-link"></span></a>0.0.4</h3>
+
+<ul>
+<li>增加了页面拦截和页面菜单的提供器接口定义。</li>
+<li>页面基类中增加了页面拦截和页面菜单的基类定义。</li>
+</ul><h3>
+<a name="003" class="anchor" href="#003"><span class="octicon octicon-link"></span></a>0.0.3</h3>
+
+<ul>
+<li>修改了HttpContext类，使其能够设置用户身份对象。</li>
+<li>优化了WebPage类，使其优先使用已经定义了的用户身份对象。</li>
+</ul><h3>
+<a name="002" class="anchor" href="#002"><span class="octicon octicon-link"></span></a>0.0.2</h3>
+
+<ul>
+<li>修订了数据层基类的查询方法在没有返回值时报错的BUG。</li>
+</ul><h3>
+<a name="001" class="anchor" href="#001"><span class="octicon octicon-link"></span></a>0.0.1</h3>
+
+<ul>
+<li>初步框架化了PHP网站系统核心基类和接口。</li>
+</ul><h2>
+<a name="%E4%BD%9C%E8%80%85%E4%BF%A1%E6%81%AF" class="anchor" href="#%E4%BD%9C%E8%80%85%E4%BF%A1%E6%81%AF"><span class="octicon octicon-link"></span></a>作者信息</h2>
+
+<ul>
+<li>电子邮件：<a href="mailto:peigong@foxmail.com">peigong@foxmail.com</a>
+</li>
+<li>微博地址：<a href="http://weibo.com/u/3030510210">http://weibo.com/u/3030510210</a>
+</li>
+<li>博客地址：<a href="http://www.peigong.tk">http://www.peigong.tk</a>
+</li>
+<li>项目地址：<a href="https://github.com/peigong/php-site-core">https://github.com/peigong/php-site-core</a>
+</li>
+</ul>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
